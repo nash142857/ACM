@@ -1,3 +1,4 @@
+/*gauss消元*/
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
@@ -70,7 +71,7 @@ int main(){
 			}
 		}
 		for(int i = 0; i < m; i++)
-		for(int j = 0; j < n; i++)
+		for(int j = 0; j < n; j++)
 		a[i][j] %= 7;
 		int as = gauss();
 		if(as == 1){
