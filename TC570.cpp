@@ -1,3 +1,6 @@
+/*TC 500分的题目 主要做法 是树dp
+对于每一块 你 做用 dp[n][2]表示有没有根 时 他需要的 cost 对应的个数 合并的时候背包即可,由于会有负数情况, 所以
+取了 50 作基准*/
 #include <vector>
 #include <list>
 #include <map>
