@@ -13,8 +13,8 @@ class Catchmm
     @agent.user_agent_alias = 'Linux Mozilla'
     page = @agent.get("http://www.cc98.org")
     form = page.forms.first
-    form.field_with(:name => 'username').value = "nash142857"
-    form.field_with(:type => 'password').value = "936866"
+    form.field_with(:name => 'username').value = name
+    form.field_with(:type => 'password').value = password
     res = form.click_button
   end
   def get_pic(url, dirname)
